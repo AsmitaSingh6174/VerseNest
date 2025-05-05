@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poetic Souls | Join Our Community</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- starting from here -->
+    <div class="container">
+      <div class="quote-container">
+        <p class="quote">
+          Every soul is either a storyteller or a seeker. Which one are you?
+        </p>
+      </div>
+    </div>
+    <br />
+    <div class="book-container">
+      <div class="book">
+        <div class="page left-page writer-page">
+          <div class="page-content">
+            <div class="role-selector" id="writer-selector">
+              <div class="icon-container">
+                <svg
+                  class="quill-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.24 12.24C21.3658 11.1142 21.9983 9.58722 21.9983 7.99504C21.9983 6.40285 21.3658 4.87588 20.24 3.75004C19.1142 2.62419 17.5872 1.9917 15.995 1.9917C14.4028 1.9917 12.8758 2.62419 11.75 3.75004L5 10.5V19H13.5L20.24 12.24Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16 8L2 22"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17.5 15H9"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h2>Writer</h2>
+              <p class="role-description">I write to express</p>
+              <button class="select-role-btn" data-role="writer">
+                Join as Writer
+              </button>
+            </div>
+
+            <div class="form-container writer-form">
+              <div class="tabs">
+                <button class="tab-btn active" data-tab="writer-signup">
+                  Sign Up
+                </button>
+                <button class="tab-btn" data-tab="writer-login">Log In</button>
+              </div>
+
+              <form id="writer-signup" class="form active">
+                <h3>Create Writer Account</h3>
+                <div class="form-group">
+                  <label for="writer-name">Full Name</label>
+                  <input type="text" id="writer-name" required />
+                </div>
+                <div class="form-group">
+                  <label for="writer-email">Email</label>
+                  <input type="email" id="writer-email" required />
+                </div>
+                <div class="form-group">
+                  <label for="writer-password">Password</label>
+                  <input type="password" id="writer-password" required />
+                </div>
+                <div class="form-group">
+                  <label for="writer-confirm-password">Confirm Password</label>
+                  <input
+                    type="password"
+                    id="writer-confirm-password"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="pen-name">Pen Name (optional)</label>
+                  <input type="text" id="pen-name" />
+                </div>
+                <div class="form-group">
+                  <label for="genre-focus">Genre Focus</label>
+                  <select id="genre-focus">
+                    <option value="">Select your primary genre</option>
+                    <option value="lyrical">Lyrical</option>
+                    <option value="narrative">Narrative</option>
+                    <option value="sonnet">Sonnet</option>
+                    <option value="haiku">Haiku</option>
+                    <option value="free-verse">Free Verse</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="writer-bio">Short Bio</label>
+                  <textarea id="writer-bio" rows="3"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Create Account</button>
+              </form>
+
+              <form id="writer-login" class="form">
+                <h3>Writer Login</h3>
+                <div class="form-group">
+                  <label for="writer-login-email">Email</label>
+                  <input type="email" id="writer-login-email" required />
+                </div>
+                <div class="form-group">
+                  <label for="writer-login-password">Password</label>
+                  <input type="password" id="writer-login-password" required />
+                </div>
+                <button type="submit" class="submit-btn">Log In</button>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-spine"></div>
+
+        <div class="page right-page reader-page">
+          <div class="page-content">
+            <div class="role-selector" id="reader-selector">
+              <div class="icon-container">
+                <svg
+                  class="eye-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h2>Reader</h2>
+              <p class="role-description">I read to feel</p>
+              <button class="select-role-btn" data-role="reader">
+                Join as Reader
+              </button>
+            </div>
+
+            <div class="form-container reader-form">
+              <div class="tabs">
+                <button class="tab-btn active" data-tab="reader-signup">
+                  Sign Up
+                </button>
+                <button class="tab-btn" data-tab="reader-login">Log In</button>
+              </div>
+
+              <form id="reader-signup" class="form active">
+                <h3>Create Reader Account</h3>
+                <div class="form-group">
+                  <label for="reader-name">Full Name</label>
+                  <input type="text" id="reader-name" required />
+                </div>
+                <div class="form-group">
+                  <label for="reader-email">Email</label>
+                  <input type="email" id="reader-email" required />
+                </div>
+                <div class="form-group">
+                  <label for="reader-password">Password</label>
+                  <input type="password" id="reader-password" required />
+                </div>
+                <div class="form-group">
+                  <label for="reader-confirm-password">Confirm Password</label>
+                  <input
+                    type="password"
+                    id="reader-confirm-password"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="genre-focus">Genre Focus</label>
+                  <select id="genre-focus">
+                    <option value="">Select your primary genre</option>
+                    <option value="lyrical">Lyrical</option>
+                    <option value="narrative">Narrative</option>
+                    <option value="sonnet">Sonnet</option>
+                    <option value="haiku">Haiku</option>
+                    <option value="free-verse">Free Verse</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="mood-preferences"
+                    >Mood Preferences (optional)</label
+                  >
+                  <div class="mood-options">
+                    <label class="mood-option">
+                      <input type="checkbox" name="mood" value="reflective" />
+                      <span>Reflective</span>
+                    </label>
+                    <label class="mood-option">
+                      <input type="checkbox" name="mood" value="uplifting" />
+                      <span>Uplifting</span>
+                    </label>
+                    <label class="mood-option">
+                      <input type="checkbox" name="mood" value="melancholic" />
+                      <span>Melancholic</span>
+                    </label>
+                    <label class="mood-option">
+                      <input type="checkbox" name="mood" value="romantic" />
+                      <span>Romantic</span>
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="submit-btn">Create Account</button>
+              </form>
+
+              <form id="reader-login" class="form">
+                <h3>Reader Login</h3>
+                <div class="form-group">
+                  <label for="reader-login-email">Email</label>
+                  <input type="email" id="reader-login-email" required />
+                </div>
+                <div class="form-group">
+                  <label for="reader-login-password">Password</label>
+                  <input type="password" id="reader-login-password" required />
+                </div>
+                <button type="submit" class="submit-btn">Log In</button>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="background-animation"></div>
+
+    <script src="login.js"></script>
+  </body>
+</html>
