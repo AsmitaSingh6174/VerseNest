@@ -24,6 +24,13 @@ router.post(
     ],
     readerController.registerReader
 );
+router.post("/login",
+    [
+        body("email").isEmail().withMessage("Invalid email format"),
+        body("password").isLength({ min: 6 }).withMessage("Password must be at least 6 characters long"),
+    ],
+    readerController.loginReader
+);
 
 // Export the router to be used in the main app
 export default router;
