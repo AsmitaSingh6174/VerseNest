@@ -1,6 +1,7 @@
 import express from "express";
 import { body } from "express-validator";
 import writerController from "../controllers/writer.controller.js";
+import authMiddleware from "../middlewares/auth.middleware.js";
 
 const router = express.Router();
 
@@ -45,6 +46,7 @@ router.post(
   ],
   writerController.registerWriter
 );
+
 router.post(
   "/login",
   [
@@ -56,5 +58,10 @@ router.post(
   writerController.loginWriter
 );
 
+router.get(
+  "/profile",
+  authMiddleware.authWriter,
+  writerController.getWriterProfile
+);
 // Export the router to be used in the main app
 export default router;
