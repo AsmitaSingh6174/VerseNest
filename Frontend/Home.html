@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VerseNest - Where Poetry Takes Flight</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Left Sidebar -->
+        <aside class="left-sidebar">
+            <div class="logo">
+                <h1>VerseNest</h1>
+                <div class="feather-icon">
+                    <i class="fas fa-feather"></i>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li class="active">
+                        <a href="#">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-feather-alt"></i>
+                            <span>New Post</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-search"></i>
+                            <span>Search</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-envelope"></i>
+                            <span>Chats</span>
+                            <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-cog"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="profile-preview">
+                <div class="avatar">
+                    <img src="#" alt="Profile">
+                </div>
+                <div class="profile-info">
+                    <h3>User0.2</h3>
+                    <p>Wandering Wordsmith</p>
+                </div>
+            </div>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+    
+            <section class="hero">
+                <div class="text-waves-container">
+                    <div class="text-wave">poetry flows like rivers through the soul of time...</div>
+                    <div class="text-wave delay-1">words dance upon the page like autumn leaves...</div>
+                    <div class="text-wave delay-2">verses whisper secrets of the heart...</div>
+                </div>
+                <div class="hero-content">
+                    <h2>Ink your soul. Verse the world.</h2>
+                    <button class="cta-button">Start Writing</button>
+                </div>
+            </section>
+            
+            <section class="feed">
+                <div class="feed-header">
+                    <h2>Your Poetic Feed</h2>
+                    <div class="feed-filters">
+                        <button class="active">Following</button>
+                        <button>Discover</button>
+                        <button>Featured</button>
+                    </div>
+                </div>
+                
+                <!-- Poem Cards -->
+                <div class="poem-cards">
+                    <!-- Poem Card 1 -->
+                    <div class="poem-card">
+                        <div class="poem-header">
+                            <div class="poet-info">
+                                <img src="#" alt="#HaikuHorizon">
+                                <div>
+                                    <h3>Robert Wordsmith</h3>
+                                    <span class="username">@wordsmith</span>
+                                </div>
+                            </div>
+                            <span class="timestamp">2 hours ago</span>
+                        </div>
+                        <div class="poem-content">
+                            <h4>Whispers of Dawn</h4>
+                            <p>In the quiet moments before sunrise,<br>
+                            When the world holds its breath in anticipation,<br>
+                            I find the words that have been hiding,<br>
+                            Behind the veil of night's contemplation.</p>
+                            
+                            <p>Whispers of dawn break through the silence,<br>
+                            Painting the sky with promises anew,<br>
+                            Each ray of light, a verse of hope,<br>
+                            Each shadow, a memory of you.</p>
+                        </div>
+                        <div class="poem-actions">
+                            <button><i class="far fa-heart"></i> <span>142</span></button>
+                            <button><i class="far fa-comment"></i> <span>24</span></button>
+                            <button><i class="far fa-bookmark"></i></button>
+                            <button><i class="far fa-share-square"></i></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Poem Card 2 -->
+                    <div class="poem-card dark-theme">
+                        <div class="poem-header">
+                            <div class="poet-info">
+                                <img src="#" alt="#">
+                                <div>
+                                    <h3>Sophia Night</h3>
+                                    <span class="username">@nightverse</span>
+                                </div>
+                            </div>
+                            <span class="timestamp">5 hours ago</span>
+                        </div>
+                        <div class="poem-content">
+                            <h4>Midnight Thoughts</h4>
+                            <p>Stars punctuate the darkness,<br>
+                            Like periods at the end of heaven's sentences.<br>
+                            I collect them in jars of memory,<br>
+                            To illuminate my darkest thoughts.</p>
+                            
+                            <p>In this midnight hour,<br>
+                            Words become constellations,<br>
+                            Mapping the universe within.</p>
+                        </div>
+                        <div class="poem-actions">
+                            <button><i class="far fa-heart"></i> <span>89</span></button>
+                            <button><i class="far fa-comment"></i> <span>12</span></button>
+                            <button><i class="far fa-bookmark"></i></button>
+                            <button><i class="far fa-share-square"></i></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Poem Card 3 -->
+                    <div class="poem-card vintage-theme">
+                        <div class="poem-header">
+                            <div class="poet-info">
+                                <img src="#" alt="#">
+                                <div>
+                                    <h3>James Austen</h3>
+                                    <span class="username">@classicverse</span>
+                                </div>
+                            </div>
+                            <span class="timestamp">Yesterday</span>
+                        </div>
+                        <div class="poem-content">
+                            <h4>Echoes of Time</h4>
+                            <p>Time-worn pages whisper tales of old,<br>
+                            Ink-stained fingers trace the words of gold.<br>
+                            In dusty tomes and leather-bound dreams,<br>
+                            The past and present intertwine, it seems.</p>
+                            
+                            <p>Like autumn leaves that fall with grace,<br>
+                            Our stories drift through time and space.<br>
+                            Yet in these verses, we remain,<br>
+                            Immortal souls that words contain.</p>
+                        </div>
+                        <div class="poem-actions">
+                            <button><i class="far fa-heart"></i> <span>215</span></button>
+                            <button><i class="far fa-comment"></i> <span>43</span></button>
+                            <button><i class="far fa-bookmark"></i></button>
+                            <button><i class="far fa-share-square"></i></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Poem Card 4 -->
+                    <div class="poem-card minimal-theme">
+                        <div class="poem-header">
+                            <div class="poet-info">
+                                <img src="#" alt="#">
+                                <div>
+                                    <h3>Luna Min</h3>
+                                    <span class="username">@minverse</span>
+                                </div>
+                            </div>
+                            <span class="timestamp">2 days ago</span>
+                        </div>
+                        <div class="poem-content">
+                            <h4>Spaces</h4>
+                            <p>between<br>
+                            words</p>
+                            
+                            <p>silence<br>
+                            speaks</p>
+                            
+                            <p>loudest</p>
+                        </div>
+                        <div class="poem-actions">
+                            <button><i class="far fa-heart"></i> <span>176</span></button>
+                            <button><i class="far fa-comment"></i> <span>18</span></button>
+                            <button><i class="far fa-bookmark"></i></button>
+                            <button><i class="far fa-share-square"></i></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Poem Card 5 -->
+                    <div class="poem-card ink-blot-theme">
+                        <div class="poem-header">
+                            <div class="poet-info">
+                                <img src="#" alt="#">
+                                <div>
+                                    <h3>David Inkwell</h3>
+                                    <span class="username">@inkpoet</span>
+                                </div>
+                            </div>
+                            <span class="timestamp">3 days ago</span>
+                        </div>
+                        <div class="poem-content">
+                            <h4>Spilled Ink</h4>
+                            <p>Words spill across the page,<br>
+                            Like ink from an overturned bottle.<br>
+                            Some form perfect lines,<br>
+                            Others create beautiful accidents.</p>
+                            
+                            <p>I am the vessel,<br>
+                            The container of thoughts,<br>
+                            But sometimes the best poetry,<br>
+                            Comes when I'm broken open.</p>
+                        </div>
+                        <div class="poem-actions">
+                            <button><i class="far fa-heart"></i> <span>132</span></button>
+                            <button><i class="far fa-comment"></i> <span>27</span></button>
+                            <button><i class="far fa-bookmark"></i></button>
+                            <button><i class="far fa-share-square"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="floating-quill">
+                    <i class="fas fa-feather-alt"></i>
+                </button>
+            </section>
+        </main>
+        
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+            <div class="sidebar-section poets-of-hour">
+                <h3>Poets of the Hour</h3>
+                <div class="trending-poets">
+                    <div class="trending-poet">
+                        <img src="#" alt="#">
+                        <div>
+                            <h4>Emily Verse</h4>
+                            <p>Sonnets & Free Verse</p>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                    <div class="trending-poet">
+                        <img src="#" alt="#">
+                        <div>
+                            <h4>Marcus Rhyme</h4>
+                            <p>Spoken Word Artist</p>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                    <div class="trending-poet">
+                        <img src="#" alt="Person">
+                        <div>
+                            <h4>Sara</h4>
+                            <p>Japanese Forms</p>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar-section trending-tags">
+                <h3>Trending Hashtags</h3>
+                <div class="hashtags">
+                    <a href="#" class="hashtag">#MidnightVerses</a>
+                    <a href="#" class="hashtag">#PoetryInMotion</a>
+                    <a href="#" class="hashtag">#WordsmithWednesday</a>
+                    <a href="#" class="hashtag">#SonnetSunday</a>
+                    <a href="#" class="hashtag">#HaikuHorizon</a>
+                </div>
+            </div>
+            
+            <div class="sidebar-section poem-roulette">
+                <h3>Feeling Inspired?</h3>
+                <button class="roulette-btn">
+                    <i class="fas fa-random"></i>
+                    Poem Roulette
+                </button>
+                <p>Discover a random poem from our global collection</p>
+            </div>
+            
+            <div class="sidebar-section upcoming-events">
+                <h3>Upcoming Events</h3>
+                <div class="events">
+                    <div class="event">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">JUN</span>
+                        </div>
+                        <div class="event-details">
+                            <h4>Virtual Open Mic Night</h4>
+                            <p>8:00 PM EST • Online</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="event-date">
+                            <span class="day">22</span>
+                            <span class="month">JUN</span>
+                        </div>
+                        <div class="event-details">
+                            <h4>Sonnet Writing Workshop</h4>
+                            <p>6:30 PM EST • Online</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="event-date">
+                            <span class="day">30</span>
+                            <span class="month">JUN</span>
+                        </div>
+                        <div class="event-details">
+                            <h4>Summer Poetry Challenge</h4>
+                            <p>All Day • Global</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+    
+    <!-- MobileNav -->
+    <nav class="mobile-nav">
+        <a href="#" class="active"><i class="fas fa-home"></i></a>
+        <a href="#"><i class="fas fa-search"></i></a>
+        <a href="#" class="mobile-compose"><i class="fas fa-feather-alt"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+        <a href="#"><i class="fas fa-user"></i></a>
+    </nav>
+    
+    <script src="Home.js"></script>
+   </body>
+</html>
