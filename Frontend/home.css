@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Ms+Madi&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background: url(wooden-floor-background.jpg) no-repeat;
+    background-size: auto;   
+}
+nav{
+    display: none;
+    position: fixed;
+    background: linear-gradient(to right bottom,rgb(237, 224, 203), #eb9e64);
+}
+#nav-logo{
+    font-family: "Ms Madi", cursive;
+    font-size: 4vw;
+    font-weight: 800;
+}
+#logo{
+    font-family: "Ms Madi", cursive;
+    font-size: 10vh;
+    font-weight: 800;
+    font-style: italic;
+}
+#logo:hover{
+    color: #450927;
+    transition: 0.3s;
+}
+nav ul {
+    height: 100dvh;
+    width: 15dvw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border: 3px double black;
+    box-shadow: #9f577b 0px 0px 10px;
+}
+nav ul li {
+    padding: 3vw;
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 600;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4vw;
+    font-weight: 500;
+    font-family: cursive;
+}
+.nav-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: flex;
+}
+#main-section{
+    display: flex;
+    flex-direction: column;
+    padding: 4vh 20vw 5vh 30vw;
+}
+.head{
+    margin-top: 10vh;
+    text-align: center;
+    height: 20vh;
+    width: 100%;
+    font-size: 4vh;
+}
+.middle{
+    height: 20vh;
+    width: 100%;
+    font-size: 4vh;
+    text-align: center;
+}
+#get-started{
+    margin-top: 3vw;
+    font-size: 4vh;
+    font-weight: 200;
+    padding: 1vh 2vw;
+    border-radius: 2vh;
+    background-color: chocolate;
+}
+#get-started a{
+    text-decoration: none;
+    color: black;  
+}
+
+#get-started:hover{
+    background-color: saddlebrown;
+    color: white;
+    transition: 0.3s;
+}
+.middle p{  
+    width: 50vw;
+    font-size: 4vh;
+    font-weight: 200;
+    margin-top: 4vw;
+    font-family: cursive;
+    padding-left: 2vw;
+}
