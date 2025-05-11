@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poetic Messenger</title>
+  <link rel="stylesheet" href="chat.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+      <div class="search-container">
+        <div class="ornate-frame">
+          <input type="text" placeholder="Search conversations..." class="search-input">
+        </div>
+      </div>
+      
+      <div class="conversations-list">
+      </div>
+    </aside>
+
+    <main class="chat-area">
+      <div class="chat-header">
+        <div class="current-chat-info">
+          <div class="profile-picture active">
+            <img src="/placeholder.svg?height=50&width=50" alt="Current chat">
+          </div>
+          <div class="chat-details">
+            <h2 class="chat-name">Elizabeth Bennet</h2>
+            <p class="chat-status">Last seen writing poetry at dawn</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="messages-container">
+      </div>
+      
+      <div class="message-input-container">
+        <div class="message-input-wrapper">
+          <textarea placeholder="Compose your message..." class="message-input"></textarea>
+          <button class="send-button">
+            <svg class="quill-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 2L3 11L10 14L13 21L20 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="chat.js"></script>
+</body>
+</html>
