@@ -1,71 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Ms+Madi&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Ms+Madi&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-html, body{
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-    background: url(texturedbg.jpg);
-    cursor: pointer;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: url(texturedbg.jpg);
+  cursor: pointer;
 }
-nav{
-    position: fixed;
-    background: linear-gradient(to right bottom,rgb(237, 224, 203), #eb9e64);
+nav {
+  overflow: hidden;
+  border: 1px solid black;
+  border-radius: 1.2vw 0vh 0vh 1.2vw;
+  position: fixed;
+  background: linear-gradient(to right bottom, green, rgb(69, 102, 69));
 }
-#nav-logo{
-    font-family: "Ms Madi", cursive;
-    font-size: 4vw;
-    font-weight: 800;
-}
-/* #logo{
-    font-family: "Ms Madi", cursive;
-    font-size: 10vh;
-    font-weight: 800;
-    font-style: italic;
-} */
-#logo:hover{
-    color: #450927;
-    transition: 0.3s;
+#nav-logo {
+  font-family: "Ms Madi", cursive;
+  font-size: 2vw;
+  font-weight: 800;
 }
 nav ul {
-    height: 100dvh;
-    width: 15dvw;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    border: 3px double black;
-    box-shadow: #9f577b 0px 0px 10px;
+  height: 100dvh;
+  width: 10dvw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 5vh;
+  flex-direction: column;
 }
 nav ul li {
-    padding: 3vw;
-    text-align: center;
-    font-size: 2vw;
-    font-weight: 600;
-    list-style: none;
+  width: 100%;
+  border-radius: 1vh;
+  text-align: left;
+  font-size: .6vw;
+  font-weight: 600;
+  list-style: none;
+  color: wheat;
+  padding: 1vh 0vw 1vh 0vw;
 }
-nav ul li a{
-    text-decoration: none;
-    color: black;
-    font-size: 2vw;
-    font-weight: 500;
-    font-family: cursive;
+.profile{
+    border-radius: 1vh;
+    background-color: rgba(255, 217, 0, 0.344);
+    padding: 1vh 0vw 1vh 0vw;
 }
-.nav-icons{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+nav ul li:hover{
+    width: 100%;
+    background-color: rgba(255, 217, 0, 0.344);
+    padding: 1vh 0vw 1vh 0vw;
 }
-#main-section{
-    display: flex;
-    flex-direction: column;
-    padding: 2vh 2vw 2vh 16vw;
+nav ul li a {
+  text-decoration: none;
+  color: wheat;
+  font-size: 1.3vw;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+.nav-icons {
+  padding-left: 1vw;
+  display: flex;
+  gap: 1vw;
+  justify-content: start;
+  align-items: center;
+}
+#main-section {
+  display: flex;
+  flex-direction: column;
+  padding: 2vh 2vw 2vh 16vw;
 }
 /*First variant of Profile*/
 /* #profile{
@@ -133,137 +140,137 @@ nav ul li a{
     color: rgb(38, 7, 7);
 } */
 /* Second Variant of Profile */
-#profile{
-    width: 80vw;
-    padding:5vh 1vh 6vh 6vh;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    flex-direction: column;
-    border: 4px double black;
-    border-radius: 3vh;
-    background: url(wooden-floor-background.jpg) no-repeat;
-    background-size: cover;
-    backdrop-filter: blur(10px);
+#profile {
+  width: 80vw;
+  padding: 5vh 1vh 6vh 6vh;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  border: 4px double black;
+  border-radius: 3vh;
+  background: url(wooden-floor-background.jpg) no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(10px);
 }
-#profile-info{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#profile-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#profile-name-bio{
-    padding-left: 2vw;
-    font-size: 3vw;
+#profile-name-bio {
+  padding-left: 2vw;
+  font-size: 3vw;
 }
-#profile-pic{
-    width: 20vw;
-    height: 20vw;
-    border-radius: 50%;
-    background: url(Rabindranath\ Tagore.jpg) no-repeat;
-    background-size: cover;
-    border: 4px double black;
+#profile-pic {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  background: url(Rabindranath\ Tagore.jpg) no-repeat;
+  background-size: cover;
+  border: 4px double black;
 }
-#profile-name{
-    font-family: "Cedarville Cursive", cursive;
-    font-size: 6vh;
-    font-weight: 600;
-    color: rgb(15, 5, 49);
+#profile-name {
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 6vh;
+  font-weight: 600;
+  color: rgb(15, 5, 49);
 }
-#profile-bio{
-    font-family: "Cedarville Cursive", cursive;
-    font-size: 5vh;
-    font-weight: 200;
-    color: black;
+#profile-bio {
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 5vh;
+  font-weight: 200;
+  color: black;
 }
-#profile-follow{
-    padding: 6vh 0vw 1vh 0vw;
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 4vh;
-    font-weight: 900;
+#profile-follow {
+  padding: 6vh 0vw 1vh 0vw;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 4vh;
+  font-weight: 900;
 }
-#profile-followers{
-    font-family: cursive;
-    font-size: 4vh;
-    font-weight: 900;
-    color: rgb(38, 7, 7);
+#profile-followers {
+  font-family: cursive;
+  font-size: 4vh;
+  font-weight: 900;
+  color: rgb(38, 7, 7);
 }
-#profile-following{
-    font-family: cursive;
-    font-size: 4vh;
-    font-weight: 900;
-    color: rgb(38, 7, 7);
+#profile-following {
+  font-family: cursive;
+  font-size: 4vh;
+  font-weight: 900;
+  color: rgb(38, 7, 7);
 }
-#profile-posts{
-    font-family: cursive;
-    font-size: 4vh;
-    font-weight: 900;
-    color: rgb(38, 7, 7);
+#profile-posts {
+  font-family: cursive;
+  font-size: 4vh;
+  font-weight: 900;
+  color: rgb(38, 7, 7);
 }
 
 /*similar in both varients*/
-#count{
-    font-family: cursive;
-    font-size: 4vh;
-    font-weight: 900;
-    color: transparent;
+#count {
+  font-family: cursive;
+  font-size: 4vh;
+  font-weight: 900;
+  color: transparent;
 }
-#count:hover{
-    color: black;
-    text-shadow: 0 0 0 black;
-    transition: 0.2s;
+#count:hover {
+  color: black;
+  text-shadow: 0 0 0 black;
+  transition: 0.2s;
 }
-#postsection{
-    width: 80vw;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 2vh 2vw 2vh 2vw;
-    border: 2px solid black;
-    border-radius: 3vh;
-    background: linear-gradient(to right bottom,rgb(237, 224, 203), #eb9e64);
+#postsection {
+  width: 80vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2vh 2vw 2vh 2vw;
+  border: 2px solid black;
+  border-radius: 3vh;
+  background: linear-gradient(to right bottom, rgb(237, 224, 203), #eb9e64);
 }
-.posts{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 2vh 2vw 2vh 2vw;
-    border-radius: 3vh;
+.posts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2vh 2vw 2vh 2vw;
+  border-radius: 3vh;
 }
-.post{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    line-height: 2;
-    padding: 2vh 4vw 2vh 4vw;
-    border: 2px dotted black;
-    border-radius: 3vh;
+.post {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 2;
+  padding: 2vh 4vw 2vh 4vw;
+  border: 2px dotted black;
+  border-radius: 3vh;
 }
-.head-post{
-    width: 110%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.head-post {
+  width: 110%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.response{
-    width: 110%;
-    padding: 2vh 2vw 2vh 2vw;
-    border: 2px solid black;
-    border-radius: 0 0 4vh 4vh;
-    background: radial-gradient(circle,rgb(237, 224, 203), #edbd89);
+.response {
+  width: 110%;
+  padding: 2vh 2vw 2vh 2vw;
+  border: 2px solid black;
+  border-radius: 0 0 4vh 4vh;
+  background: radial-gradient(circle, rgb(237, 224, 203), #edbd89);
 }
-.response ul{
-    list-style: none;
-    font-size: 4vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.response ul {
+  list-style: none;
+  font-size: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

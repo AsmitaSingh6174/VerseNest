@@ -93,12 +93,12 @@ main{
     background-color: chocolate;
 }
 #get-started a{
+    background-color: saddlebrown;
     text-decoration: none;
     color: black;  
 }
 
 #get-started:hover{
-    background-color: saddlebrown;
     color: white;
     transition: 0.3s;
 }
